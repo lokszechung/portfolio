@@ -1,0 +1,13 @@
+.title-view-container{
+  height: 100vh;
+  h2{
+    text-align: center;
+    color: yellow;
+  }
+  img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 290px;
+  }
+}

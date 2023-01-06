@@ -1,0 +1,25 @@
+.projects-view-container{
+  margin-bottom: 100px;
+
+  .project-box{
+    margin-top: 50px;
+  }
+  .detail-line{
+    display: flex;
+    align-items: center;
+    img{
+      height: 40px;
+    }
+    .empty{
+      width: 30px;
+    }
+  }
+
+  .tech-line{
+    display: flex;
+    align-items: center;
+    img{
+      height: 40px;
+    }
+  }
+}
