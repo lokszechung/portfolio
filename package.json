@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "eslint-plugin-react": "^7.30.1",
+    "luxy.js": "^0.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.6.1",
     "react-scripts": "^5.0.1",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "smooth-scrollbar": "^8.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

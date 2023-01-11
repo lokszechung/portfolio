@@ -1,4 +1,5 @@
 import './styles.scss'
+import { useState, useEffect } from 'react'
 
 import Django from '../../images/icons/django.svg'
 import Express from '../../images/icons/express.svg'
@@ -32,20 +33,100 @@ import Sass from '../../images/icons/sass.svg'
 //   return `../../images/icons/${i.toLowerCase()}.svg`
 // }
 
-
-
 const AboutView = () => {
+
+  const [scrolled, setScrolled] = useState()
+
+  // const tech = [
+  //   'Django',
+  //   'Express',
+  //   'Git',
+  //   'GitHub',
+  //   'HTML',
+  //   'JavaScript',
+  //   'MongoDB',
+  //   'Node',
+  //   'NPM',
+  //   'Python',
+  //   'React',
+  //   'Sass'
+  // ]
+  
+  window.addEventListener('scroll', () => {
+    setScrolled(window.scrollY)
+  })
+
+  
+
   return (
     <div className='about-view-container'>
-      <h2>ABOUT ME</h2>
-      <h2 className='outline'>ABOUT ME</h2>
+      <div className='about-line-one'>
+        <h2 style={{ transform: `translateX(${-150+scrolled/30}%)`, transitionDuration: '0.95s' }}>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+        </h2>
+      </div>
+      <div className='about-line-two'>
+        <h2 style={{ transform: `translateX(${-150-scrolled/40}%)`, transitionDuration: '0.95s' }}>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+        </h2>
+      </div>
+      {/* <div className='about-line-one'>
+        <h2 style={{ transform: `translateX(${-scrolled}px)` }}>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+          <span className="outline">ABOUT ME </span>
+          <span>ABOUT ME </span>
+        </h2>
+      </div> */}
       <p>Prior to joining the General Assembly bootcamp, I was working in the finance and social care industry. I felt that I was stagnating in my learning and development in that role, so I took the first step in finding a career that challenges me to problem solve and tap into my enthusiasm for logical thinking and creativity.</p>
       <p>I am seeking a Full Stack Developer role in a team that values communication and collaboration. I am motivated by the opportunity to improve myself and those around me, and create work that can have a positive impact on users.</p>
       <h3>Tech Stack</h3>
       <div className='icons-container'>
         {/* {tech.map(i => (
           <div className='icon-box' key={i}>
-            <div className='icon'><img src={i.toLowerCase()} alt={i} /></div>
+            <div className='icon'><img src={`../../images/icons/${i.toLowerCase()}.svg`} alt={i} /></div>
             <p>{i}</p>
           </div>
         ))} */}

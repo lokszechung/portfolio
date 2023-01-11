@@ -1,4 +1,5 @@
 import './styles.scss'
+import { useState } from 'react'
 
 import clock from '../../images/icons/clock.png'
 import solo from '../../images/icons/solo.png'
@@ -17,12 +18,66 @@ import NPM from '../../images/icons/npm.svg'
 import Python from '../../images/icons/python.svg'
 import react from '../../images/icons/react.svg'
 import Sass from '../../images/icons/sass.svg'
+import CSS from '../../images/icons/css.svg'
 
 const ProjectsView = () => {
+
+  const [scrolled, setScrolled] = useState()
+
+  window.addEventListener('scroll', () => {
+    setScrolled(window.scrollY)
+  })
+
   return (
     <div className='projects-view-container'>
-      <h2>MY PROJECTS</h2>
-      <h2 className='outline'>MY PROJECTS</h2>
+      <div className='projects-line-one'>
+        <h2 style={{ transform: `translateX(${-scrolled/30}%)`, transitionDuration: '0.95s' }}>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+        </h2>
+      </div>
+      <div className='projects-line-two'>
+        <h2 style={{ transform: `translateX(${-170+scrolled/40}%)`, transitionDuration: '0.95s' }}>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+          <span className="outline">MY PROJECTS </span>
+          <span>MY PROJECTS </span>
+        </h2>
+      </div>
       <div className='project-box'>
         <h3>Thrift</h3>
         <div className='detail-line'>
@@ -34,12 +89,30 @@ const ProjectsView = () => {
         </div>
         <div className='tech-line'>
           <p>Tech Stack:</p>
-          <img src={JavaScript} alt='JavaScript' />
-          <img src={react} alt='React' />
-          <img src={Python} alt='Python' />
-          <img src={Django} alt='Django' />
-          <img src={HTML} alt='HTML' />
-          <img src={Sass} alt='Sass' />
+          <div className='icon-wrapper'>
+            <img src={JavaScript} alt='JavaScript' />
+            <span className='tooltipText'>JavaScript</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={react} alt='React' />
+            <span className='tooltipText'>React</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Python} alt='Python' />
+            <span className='tooltipText'>Python</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Django} alt='Django' />
+            <span className='tooltipText'>Django</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={HTML} alt='HTML' />
+            <span className='tooltipText'>HTML</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Sass} alt='Sass' />
+            <span className='tooltipText'>Sass</span>
+          </div>
         </div>
         <div className='info'>
           <p>Using React for the frontend and Python and Django REST Framework to build the backend and serve a REST API, I created a full stack application for a marketplace website.</p>
@@ -57,13 +130,34 @@ const ProjectsView = () => {
         </div>
         <div className='tech-line'>
           <p>Tech Stack:</p>
-          <img src={JavaScript} alt='JavaScript' />
-          <img src={react} alt='React' />
-          <img src={Node} alt='Node' />
-          <img src={Express} alt='Express' />
-          <img src={MongoDB} alt='MongoDB' />
-          <img src={HTML} alt='HTML' />
-          <img src={Sass} alt='Sass' />
+          <div className='icon-wrapper'>
+            <img src={JavaScript} alt='JavaScript' />
+            <span className='tooltipText'>JavaScript</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={react} alt='React' />
+            <span className='tooltipText'>React</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Node} alt='Node' />
+            <span className='tooltipText'>Node</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Express} alt='Express' />
+            <span className='tooltipText'>Express</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={MongoDB} alt='MongoDB' />
+            <span className='tooltipText'>MongoDB</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={HTML} alt='HTML' />
+            <span className='tooltipText'>HTML</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Sass} alt='Sass' />
+            <span className='tooltipText'>Sass</span>
+          </div>
         </div>
         <div className='info'>
           <p>Using React for the frontend and MongoDB, Express and Node to build the backend and serve a REST API, we created a full stack MERN application for a houseplants blogging and e-commerce website. I contributed by building the home page, plant catalogue pages, and adding authentication into CRUD elements.</p>
@@ -81,10 +175,22 @@ const ProjectsView = () => {
         </div>
         <div className='tech-line'>
           <p>Tech Stack:</p>
-          <img src={JavaScript} alt='JavaScript' />
-          <img src={react} alt='React' />
-          <img src={HTML} alt='HTML' />
-          <img src={Sass} alt='Sass' />
+          <div className='icon-wrapper'>
+            <img src={JavaScript} alt='JavaScript' />
+            <span className='tooltipText'>JavaScript</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={react} alt='React' />
+            <span className='tooltipText'>React</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={HTML} alt='HTML' />
+            <span className='tooltipText'>HTML</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={Sass} alt='Sass' />
+            <span className='tooltipText'>Sass</span>
+          </div>
         </div>
         <div className='info'>
           <p>Built a React app, along with SCSS, Bootstrap and Express with Node which consumed a public API from Skiddle, displaying the results of events in London. I created the index page displaying events and built the category and date filter.</p>
@@ -102,9 +208,18 @@ const ProjectsView = () => {
         </div>
         <div className='tech-line'>
           <p>Tech Stack:</p>
-          <img src={JavaScript} alt='JavaScript' />
-          <img src={HTML} alt='HTML' />
-          <img src={Sass} alt='Sass' />
+          <div className='icon-wrapper'>
+            <img src={JavaScript} alt='JavaScript' />
+            <span className='tooltipText'>JavaScript</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={HTML} alt='HTML' />
+            <span className='tooltipText'>HTML</span>
+          </div>
+          <div className='icon-wrapper'>
+            <img src={CSS} alt='CSS' />
+            <span className='tooltipText'>CSS</span>
+          </div>
         </div>
         <div className='info'>
           <p>Built a grid-based game using JavaScript, HTML and CSS. I chose a challenging game to replicate, cementing my fundamental logical JavaScript skills.</p>

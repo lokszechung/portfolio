@@ -1,5 +1,41 @@
 .contact-view-container{
   // height: 100vh;
+
+  .contact-line-one, .contact-line-two, .contact-line-three{
+    white-space: nowrap;
+    overflow: hidden;
+    word-spacing: -10px;
+    background-color:none;
+    span{
+      background-color: none;
+      font-size: 0.6rem;
+    }
+  }
+  .contact-line-one{
+    height: 50px;
+    span{
+      line-height: 50px;
+    }
+    h1{
+      transform: translateX(-150%);
+    }
+  }
+  .contact-line-two{
+    line-height: 50px;
+    span{
+      height: 50px;
+    }
+    :not(span.outline){
+      color: rgba(255,255,255,0.5)
+    }
+    .outline{
+      -webkit-text-stroke: 2px rgba(255,255,255,0.5);
+    }
+    h1{
+      transform: translateX(-150%);
+    }
+  }
+
   .find{
     margin: 50px 0 20px 0;
   }

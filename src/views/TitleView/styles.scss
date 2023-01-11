@@ -1,5 +1,36 @@
 .title-view-container{
   height: 100vh;
+
+  .title-line-one, .title-line-two{
+    white-space: nowrap;
+    overflow: hidden;
+    word-spacing: -10px;
+    span{
+      background-color: none;
+      font-size: 1rem;
+    }
+    h1{
+      background-color: none;
+    }
+  }
+  .title-line-one{
+    // background-color: red;
+    margin-top: 400px;
+    height: 86px;
+    span{
+      line-height: 86px;
+    }
+  }
+  .title-line-two{
+    // background-color: red;
+    line-height: 86px;
+    span{
+      height: 86px;
+    }
+    h1{
+      transform: translateX(-80%);
+    }
+  }
   h2{
     text-align: center;
     color: yellow;
