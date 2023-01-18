@@ -121,9 +121,9 @@ const AboutView = () => {
           <span>ABOUT ME </span>
         </h2>
       </div> */}
-      <p className='about-text'>Prior to joining the General Assembly bootcamp, I was working in the finance and social care industry. I felt that I was stagnating in my learning and development in that role, so I took the first step in finding a career that challenges me to problem solve and tap into my enthusiasm for logical thinking and creativity.</p>
+      <p className='about-text'>Prior to joining the General Assembly bootcamp, I was working in the finance and social care industry. I felt that I was stagnating (USE DIFFERENT POSITIVE) in my learning and development in that role, so I took the first step in finding a career that challenges me to problem solve and tap into my enthusiasm for logical thinking and creativity.</p>
       <p className='about-text'>I am seeking a Full Stack Developer role in a team that values communication and collaboration. I am motivated by the opportunity to improve myself and those around me, and create work that can have a positive impact on users.</p>
-      <p className='about-text'>When I'm not coding, you'll probably find me playing football somewhere. Or watching football. #COYG</p>
+      <p className='about-text'>When I'm not coding, you'll probably find me playing football somewhere. Or watching football. #COYG ADD MORE HERE</p>
       <h3>Tech Stack</h3>
       <div className='icons-container'>
         {/* {tech.map(i => (
