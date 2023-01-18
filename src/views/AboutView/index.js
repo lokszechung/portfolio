@@ -10,6 +10,7 @@ import JavaScript from '../../images/icons/javascript.svg'
 import MongoDB from '../../images/icons/mongodb.svg'
 import Node from '../../images/icons/node.svg'
 import NPM from '../../images/icons/npm.svg'
+import PostgreSQL from '../../images/icons/postgresql.svg'
 import Python from '../../images/icons/python.svg'
 import react from '../../images/icons/react.svg'
 import Sass from '../../images/icons/sass.svg'
@@ -61,7 +62,7 @@ const AboutView = () => {
   return (
     <div className='about-view-container'>
       <div className='about-line-one'>
-        <h2 style={{ transform: `translateX(${-150+scrolled/30}%)`, transitionDuration: '0.95s' }}>
+        <h2 style={{ transform: `translateX(${-150+scrolled/80}%)`, transitionDuration: '0.95s' }}>
           <span>ABOUT ME </span>
           <span className="outline">ABOUT ME </span>
           <span>ABOUT ME </span>
@@ -85,7 +86,7 @@ const AboutView = () => {
         </h2>
       </div>
       <div className='about-line-two'>
-        <h2 style={{ transform: `translateX(${-150-scrolled/40}%)`, transitionDuration: '0.95s' }}>
+        <h2 style={{ transform: `translateX(${-150-scrolled/100}%)`, transitionDuration: '0.95s' }}>
           <span className="outline">ABOUT ME </span>
           <span>ABOUT ME </span>
           <span className="outline">ABOUT ME </span>
@@ -120,8 +121,9 @@ const AboutView = () => {
           <span>ABOUT ME </span>
         </h2>
       </div> */}
-      <p>Prior to joining the General Assembly bootcamp, I was working in the finance and social care industry. I felt that I was stagnating in my learning and development in that role, so I took the first step in finding a career that challenges me to problem solve and tap into my enthusiasm for logical thinking and creativity.</p>
-      <p>I am seeking a Full Stack Developer role in a team that values communication and collaboration. I am motivated by the opportunity to improve myself and those around me, and create work that can have a positive impact on users.</p>
+      <p className='about-text'>Prior to joining the General Assembly bootcamp, I was working in the finance and social care industry. I felt that I was stagnating in my learning and development in that role, so I took the first step in finding a career that challenges me to problem solve and tap into my enthusiasm for logical thinking and creativity.</p>
+      <p className='about-text'>I am seeking a Full Stack Developer role in a team that values communication and collaboration. I am motivated by the opportunity to improve myself and those around me, and create work that can have a positive impact on users.</p>
+      <p className='about-text'>When I'm not coding, you'll probably find me playing football somewhere. Or watching football. #COYG</p>
       <h3>Tech Stack</h3>
       <div className='icons-container'>
         {/* {tech.map(i => (
@@ -158,6 +160,11 @@ const AboutView = () => {
         <div className='icon-box'>
           <img src={Django} alt='Django' />
           <p>Django</p>
+        </div>
+
+        <div className='icon-box'>
+          <img src={PostgreSQL} alt='PostgreSQL' />
+          <p>PostgreSQL</p>
         </div>
 
         <div className='icon-box'>

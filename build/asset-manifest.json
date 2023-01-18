@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e35047b.css",
-    "main.js": "/static/js/main.38648d8f.js",
+    "main.css": "/static/css/main.2d103505.css",
+    "main.js": "/static/js/main.85102858.js",
     "static/media/arrow.gif": "/static/media/arrow.056dfb478e400930ebca.gif",
     "static/media/Circular-Std-Medium-500.ttf": "/static/media/Circular-Std-Medium-500.3fcb6535e39024a69e30.ttf",
     "static/media/Circular-Std-Book.ttf": "/static/media/Circular-Std-Book.ce1731670f4779d9c951.ttf",
@@ -17,15 +17,16 @@
     "static/media/python.svg": "/static/media/python.1b0b1c85f2775e45f3dd58e2b861c9ad.svg",
     "static/media/node.svg": "/static/media/node.eaa4ddba4f5e67aed02f70a7c6e523f1.svg",
     "static/media/express.svg": "/static/media/express.d1507d9237ffe625ed4a6f1f56fd0dcc.svg",
+    "static/media/css.svg": "/static/media/css.d9fe501f487186b6c788a41e6ba4046f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.eb60e671e4d605ec98fa4cbb0e182e86.svg",
     "static/media/github.svg": "/static/media/github.54a0ba4c65a434487d8fd4479d13bfd5.svg",
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
-    "main.3e35047b.css.map": "/static/css/main.3e35047b.css.map",
-    "main.38648d8f.js.map": "/static/js/main.38648d8f.js.map"
+    "main.2d103505.css.map": "/static/css/main.2d103505.css.map",
+    "main.85102858.js.map": "/static/js/main.85102858.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e35047b.css",
-    "static/js/main.38648d8f.js"
+    "static/css/main.2d103505.css",
+    "static/js/main.85102858.js"
   ]
 }

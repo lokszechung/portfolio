@@ -22,7 +22,7 @@ const TitleView = () => {
       <h2>THIS WEBSITE IS UNDER CONSTRUCTION</h2>
       <img src={arrow} alt='down arrow'/>
       <div className='title-line-one'>
-        <h1 style={{ transform: `translateX(${-scrolled/30}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-scrolled/50}%)`, transitionDuration: '0.95s' }}>
         {/* <h1 className='luxy-el' data-horizontal="1" data-speed-x="-50"> */}
           <span>LOK SZE CHUNG </span>
           <span className="outline">SOFTWARE DEVELOPER </span>
@@ -30,7 +30,7 @@ const TitleView = () => {
         </h1>
       </div>
       <div className='title-line-two'>
-        <h1 style={{ transform: `translateX(${-80+scrolled/40}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-80+scrolled/70}%)`, transitionDuration: '0.95s' }}>
         {/* <h1 className='luxy-el' data-horizontal="1" data-speed-x="50"> */}
           <span>LOK SZE CHUNG </span>
           <span className="outline">SOFTWARE DEVELOPER </span>

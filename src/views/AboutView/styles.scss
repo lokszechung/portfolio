@@ -72,6 +72,13 @@
       }
     }
   }
-
+  .about-text{
+    width: 50%;
+    margin: 30px auto;
+    text-align: justify;
+  }
+  .about-text:first-of-type{
+    margin-top: 80px;
+  }
   
 }

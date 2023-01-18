@@ -37,13 +37,19 @@
   }
 
   .find{
-    margin: 50px 0 20px 0;
+    margin: 50px 0 50px 200px;
   }
   .contact-line{
     display: flex;
-    
+    margin: 10px 0 10px 200px;
     img{
       height: 40px;
     }
+
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
   }
 }
