@@ -52,17 +52,73 @@ const AboutView = () => {
   //   'React',
   //   'Sass'
   // ]
+
+  const techStack = [
+    {
+      tech: 'JavaScript',
+      url: JavaScript
+    },
+    {
+      tech: 'React',
+      url: react
+    },
+    {
+      tech: 'Node',
+      url: Node
+    },
+    {
+      tech: 'Express',
+      url: Express
+    },
+    {
+      tech: 'Python',
+      url: Python
+    },
+    {
+      tech: 'Django',
+      url: Django
+    },
+    {
+      tech: 'MongoDB',
+      url: MongoDB
+    },
+    {
+      tech: 'PostgreSQL',
+      url: PostgreSQL
+    },
+    {
+      tech: 'HTML',
+      url: HTML
+    },
+    {
+      tech: 'Sass',
+      url: Sass
+    },
+    {
+      tech: 'Git',
+      url: Git
+    },
+    {
+      tech: 'GitHub',
+      url: GitHub
+    },
+    {
+      tech: 'NPM',
+      url: NPM
+    },
+  ]
   
   window.addEventListener('scroll', () => {
     setScrolled(window.scrollY)
   })
 
-  
 
   return (
-    <div className='about-view-container'>
+    <div className='about-view-container' id="about">
       <div className='about-line-one'>
         <h2 style={{ transform: `translateX(${-150+scrolled/80}%)`, transitionDuration: '0.95s' }}>
+        {/* <h2 style={{ transform: `translateX(${-150+dy}px)`}}> */}
+        {/* <h2 style={topStyle}> */}
           <span>ABOUT ME </span>
           <span className="outline">ABOUT ME </span>
           <span>ABOUT ME </span>
@@ -87,6 +143,7 @@ const AboutView = () => {
       </div>
       <div className='about-line-two'>
         <h2 style={{ transform: `translateX(${-150-scrolled/100}%)`, transitionDuration: '0.95s' }}>
+        {/* <h2 style={{ transform: `translateX(${-150-dy}px)`}}> */}
           <span className="outline">ABOUT ME </span>
           <span>ABOUT ME </span>
           <span className="outline">ABOUT ME </span>
@@ -121,83 +178,20 @@ const AboutView = () => {
           <span>ABOUT ME </span>
         </h2>
       </div> */}
-      <p className='about-text'>Prior to joining the General Assembly bootcamp, I was working in the finance and social care industry. I felt that I was stagnating (USE DIFFERENT POSITIVE) in my learning and development in that role, so I took the first step in finding a career that challenges me to problem solve and tap into my enthusiasm for logical thinking and creativity.</p>
-      <p className='about-text'>I am seeking a Full Stack Developer role in a team that values communication and collaboration. I am motivated by the opportunity to improve myself and those around me, and create work that can have a positive impact on users.</p>
-      <p className='about-text'>When I'm not coding, you'll probably find me playing football somewhere. Or watching football. #COYG ADD MORE HERE</p>
-      <h3>Tech Stack</h3>
-      <div className='icons-container'>
-        {/* {tech.map(i => (
+      <p className='about-text'></p>
+      <p className='about-text'>I am a <span>Software Developer</span> and a recent graduate of the Software Engineeing Immersive programme at General Assembly.</p>
+      <p className='about-text'>My aim is to find a Full Stack Developer role in a team that values <span>communication</span> and <span>collaboration</span>. <br /> I am motivated by the opportunity to improve and continuously learn and create work that can have a <span>positive impact</span> on people.</p>
+      <p className='about-text'>When I'm not writing <span>clean code</span>, you'll probably find me playing football somewhere. Or watching football. <span>#COYG</span> <br />
+      I'm also interested in trading in the stock market and forex market, and have dabbled in crypto &#x28;oops&#x29;. However, I've lost more than I've made, so I really do need a full-time job.</p>
+      {/* <h3>Tech Stack</h3> */}
+      {/* <div className='icons-container'>
+        {techStack.map(i => (
           <div className='icon-box' key={i}>
-            <div className='icon'><img src={`../../images/icons/${i.toLowerCase()}.svg`} alt={i} /></div>
-            <p>{i}</p>
+            <img src={i.url} alt={i.tech} />
+            <p>{i.tech}</p>
           </div>
-        ))} */}
-        <div className='icon-box'>
-          <img src={JavaScript} alt='JavaScript' />
-          <p>JavaScript</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={react} alt='React' />
-          <p>React</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={Node} alt='Node' />
-          <p>Node</p>
-        </div> 
-
-        <div className='icon-box'>
-          <img src={Express} alt='Express' />
-          <p>Express</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={Python} alt='Python' />
-          <p>Python</p>
-        </div>  
-
-        <div className='icon-box'>
-          <img src={Django} alt='Django' />
-          <p>Django</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={PostgreSQL} alt='PostgreSQL' />
-          <p>PostgreSQL</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={MongoDB} alt='MongoDB' />
-          <p>MongoDB</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={HTML} alt='HTML' />
-          <p>HTML</p>
-        </div>
-
-        <div className='icon-box'>
-          <img src={Sass} alt='Sass' />
-          <p>Sass</p>
-        </div> 
-
-        <div className='icon-box'>
-          <img src={NPM} alt='NPM' />
-          <p>NPM</p>
-        </div> 
-
-        <div className='icon-box'>
-          <img src={Git} alt='Git' />
-          <p>Git</p>
-        </div> 
-
-        <div className='icon-box'>
-          <img src={GitHub} alt='GitHub' />
-          <p>GitHub</p>
-        </div> 
-        
-      </div>
+        ))}        
+      </div> */}
     </div>
   )
 }

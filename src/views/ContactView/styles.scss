@@ -1,5 +1,5 @@
 .contact-view-container{
-  // height: 100vh;
+  height: 100vh;
 
   .contact-line-one, .contact-line-two, .contact-line-three{
     white-space: nowrap;
@@ -52,4 +52,11 @@
     color: white;
     text-decoration: none;
   }
+}
+
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }

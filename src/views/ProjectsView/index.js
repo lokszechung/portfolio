@@ -26,6 +26,8 @@ import discover1 from '../../images/projects/discover-london-2.png'
 import sprout1 from '../../images/projects/sprout-anywhere-1.png'
 import thrift1 from '../../images/projects/thrift-1.png'
 
+import ClicktToOpen from '../../components/ClickToOpen'
+
 const ProjectsView = () => {
 
   const [scrolled, setScrolled] = useState()
@@ -35,7 +37,7 @@ const ProjectsView = () => {
   })
 
   return (
-    <div className='projects-view-container'>
+    <div className='projects-view-container' id="projects">
       <div className='projects-line-one'>
         <h2 style={{ transform: `translateX(${-scrolled/60}%)`, transitionDuration: '0.95s' }}>
           <span>MY PROJECTS </span>
@@ -89,7 +91,7 @@ const ProjectsView = () => {
         <div className='project-info'>
           <div className="project-title">
             <h3>Thrift</h3>
-            <a target="_blank" href="https://github.com/lokszechung/thrift-project">repo</a>
+            <a className="repo" target="_blank" href="https://github.com/lokszechung/thrift-project">repo</a>
           </div>
           <div className='detail-line'>
             <img src={clock} alt='timeframe' />
@@ -136,11 +138,14 @@ const ProjectsView = () => {
       </div>
 
       <div className='project-box'>
-        <a href="https://sprout-anywhere.herokuapp.com/"><img className='thumbnail' src={sprout1} alt="sprout"/></a>
+        <a className="project-image-box" href="https://sprout-anywhere.herokuapp.com/">
+          <ClicktToOpen />
+          <img className='thumbnail' src={sprout1} alt="sprout"/>
+        </a>
         <div className='project-info'>
           <div className="project-title">
             <h3>Sprout Anywhere</h3>
-            <a target="_blank" href="https://github.com/lokszechung/sprout-anywhere">repo</a>
+            <a className="repo" target="_blank" href="https://github.com/lokszechung/sprout-anywhere">repo</a>
           </div>
           <div className='detail-line'>
             <img src={clock} alt='timeframe' />
@@ -191,7 +196,7 @@ const ProjectsView = () => {
         <div className='project-info'>
           <div className="project-title">
             <h3>Discover London</h3>
-            <a target="_blank" href="https://github.com/lokszechung/LondonEvents">repo</a>
+            <a className="repo" target="_blank" href="https://github.com/lokszechung/LondonEvents">repo</a>
           </div>
           <div className='detail-line'>
             <img src={clock} alt='timeframe' />
@@ -230,7 +235,7 @@ const ProjectsView = () => {
         <div className='project-info'>
           <div className="project-title">
             <h3>Minesweeper</h3>
-            <a target="_blank" href="https://github.com/lokszechung/project-minesweeper">repo</a>
+            <a className="repo" target="_blank" href="https://github.com/lokszechung/project-minesweeper">repo</a>
           </div>
           <div className='detail-line'>
             <img src={clock} alt='timeframe' />

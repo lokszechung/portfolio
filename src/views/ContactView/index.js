@@ -14,7 +14,7 @@ const ContactView = () => {
   })
 
   return (
-    <div className="contact-view-container">
+    <div className="contact-view-container" id="contact">
       <div className='contact-line-one'>
         <h2 style={{ transform: `translateX(${-150+scrolled/60}%)`, transitionDuration: '0.95s' }}>
           <span>CONTACT ME </span>

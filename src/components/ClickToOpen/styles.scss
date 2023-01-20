@@ -1,0 +1,81 @@
+@font-face{
+  font-family: MonumentExtended-Regular;
+  src: url('../../styles/MonumentExtended-Regular.otf')
+}
+@font-face{
+  font-family: MonumentExtended-Ultrabold;
+  src: url('../../styles/MonumentExtended-Ultrabold.otf')
+}
+@font-face{
+  font-family: Circular-Std-Medium-500;
+  src: url('../../styles/Circular-Std-Medium-500.ttf')
+}
+:root{
+  --gradient: linear-gradient(to right, #833ab4, #33ea17, #e90000);
+}
+
+.circle{
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  // border: 5px solid blue;
+  // background: var(--gradient);
+  // background-image: url('../../images/multi.png');
+  // background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  &:hover{
+    scale: 1.1;
+  }
+}
+
+// .logo{
+//   position: absolute;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   // background-color: black;
+// }
+
+.text {
+  box-sizing:content-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url('../../images/glowing-blue.png');
+  background-size: 120%;
+  background-position: center;
+  // padding: 1%;
+  // border: 20px solid;
+  // border-image-source: url('../../images/multi.png');
+  // border-image-slice: 250;
+  // top: 20
+  // background-color: black;
+  animation: rotateText 7.5s linear infinite;
+  color: blue;
+  -webkit-text-stroke: 1px white;
+  // text-shadow: 5px blue;
+  span{
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    font-size: 0.17rem;
+    font-family: MonumentExtended-Ultrabold;
+    transform-origin: 0 45px;
+  }
+}
+@keyframes rotateText {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+

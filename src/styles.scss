@@ -8,10 +8,19 @@
 }
 
 body{
-  background-color: black;
-  color: white;
   height: 100vh;
+  // overflow-y: auto;
+  overflow: overlay;
+  background-color: none;
+  color: white;
+  // height: 100vh;
   scroll-behavior: smooth;
+  background-image: url('images/night-sky.jpg');
+  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position-x: 55%;
+  // background-position-y: 10%;
+  background-attachment: fixed;
 }
 
 @font-face{
@@ -31,6 +40,22 @@ body{
   src: url('./styles/Circular-Std-Book.ttf');
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: (0, 0, 0, 0.2)
+}
+
+::-webkit-scrollbar-thumb{
+  background: hsl(0 0% 80% / 0.2)
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: hsl(0 0% 99% / 0.8)
+}
+
 h1 {
   font-family: MonumentExtended-Ultrabold;
   font-size: 0.9rem;
@@ -47,7 +72,7 @@ h3{
 }
 
 .outline{
-  color: black;
+  color: transparent;
   -webkit-text-stroke: 2px white;
 }
 
@@ -64,4 +89,12 @@ p{
 a{
   font-family: Circular-Std-Book;
   font-size: 0.2rem;
+  text-decoration: none;
+}
+
+.click-to-open{
+  font-family: MonumentExtended-Ultrabold;
+  p{
+    font-family: MonumentExtended-Ultrabold;
+  }
 }

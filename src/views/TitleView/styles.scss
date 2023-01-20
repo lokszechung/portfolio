@@ -1,44 +1,70 @@
 .title-view-container{
-  height: 100vh;
-
-  .title-line-one, .title-line-two{
-    white-space: nowrap;
-    overflow: hidden;
-    word-spacing: -10px;
-    span{
-      background-color: none;
-      font-size: 1rem;
+  min-height: 100vh;
+  margin-top: 30%;
+  margin-bottom: 20%;
+  .line-container{
+    margin-bottom: 20%;
+    .title-line-one, .title-line-two{
+      white-space: nowrap;
+      overflow: hidden;
+      word-spacing: -10px;
+      span{
+        background-color: none;
+        font-size: 1rem;
+      }
+      h1{
+        background-color: none;
+      }
     }
-    h1{
-      background-color: none;
-    }
-  }
-  .title-line-one{
-    // background-color: red;
-    margin-top: 400px;
-    height: 86px;
-    span{
-      line-height: 86px;
-    }
-  }
-  .title-line-two{
-    // background-color: red;
-    line-height: 86px;
-    span{
+    .title-line-one{
+      // margin-top: 400px;
       height: 86px;
+      span{
+        line-height: 86px;
+      }
     }
-    h1{
-      transform: translateX(-80%);
+    .title-line-two{
+      line-height: 86px;
+      span{
+        height: 86px;
+      }
+      h1{
+        transform: translateX(-80%);
+      }
     }
   }
-  h2{
+
+  h3{
+    margin-top: 50px;
     text-align: center;
-    color: yellow;
   }
-  img{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 290px;
+  .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 50px auto 100px auto;
+
+    .icon-box{
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      img{
+        height: 120px;
+      }
+      p{
+        text-align: center;
+      }
+    }
   }
+  // h2{
+  //   text-align: center;
+  //   color: yellow;
+  // }
+  // img{
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   height: 290px;
+  // }
 }

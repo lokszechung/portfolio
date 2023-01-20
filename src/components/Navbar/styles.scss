@@ -1,0 +1,53 @@
+@font-face{
+  font-family: MonumentExtended-Regular;
+  src: url('../../styles/MonumentExtended-Regular.otf')
+}
+@font-face{
+  font-family: MonumentExtended-Ultrabold;
+  src: url('../../styles/MonumentExtended-Ultrabold.otf')
+}
+@font-face{
+  font-family: Circular-Std-Medium-500;
+  src: url('../../styles/Circular-Std-Medium-500.ttf')
+}
+:root{
+  --gradient: linear-gradient(to right, #833ab4, #33ea17, #e90000);
+}
+
+header{
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+}
+
+.navbar{
+  // height: 50px;
+  background-color: orange;
+  // width: 200px;
+  
+  // position: sticky;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // background-color: white;
+  
+  ul{
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    // text-decoration: none;
+    padding-right: 5%;
+    li{
+      list-style-type: none; 
+      line-height: 5px; 
+      a{
+        color: white;
+        font-size: 0.15rem;
+        // float: right;
+      }
+    }
+  }
+}

@@ -1,16 +1,16 @@
 import './styles.scss'
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes } from 'react-router-dom'
 
 import TitleView from './views/TitleView'
 import AboutView from './views/AboutView'
 import ProjectsView from './views/ProjectsView'
 import ContactView from './views/ContactView'
+import Navbar from './components/Navbar'
 
 import SmoothScroll from './components/SmoothScroll'
 
 const App = () => {
-
-  // const [ , ]
 
   const body = document.body
   const main = document.getElementById('root')
@@ -54,7 +54,7 @@ const App = () => {
     
     // dx = Math.floor(dx * 100) / 100
     dy = Math.floor(dy * 100) / 100
-    
+    // setYValue(dy)
     // Finally we translate our container to its new positions.
     // Don't forget to add a minus sign because the container needs to move in 
     // the opposite direction of the window scroll.
@@ -70,15 +70,20 @@ const App = () => {
   }
 
   return (
-    <main id="main">
-      {/* <SmoothScroll />
-      <div id="luxy"> */}
-        <TitleView />
-        <AboutView />
-        <ProjectsView />
-        <ContactView />
-      {/* </div> */}
-    </main>
+    <>
+      {/* <Navbar /> */}
+      {/* <BrowserRouter> */}
+        <main>
+          {/* <SmoothScroll />
+          <div id="luxy"> */}
+          <TitleView />
+          <AboutView />
+          <ProjectsView />
+          <ContactView />
+          {/* </div> */}
+        </main>
+      {/* </BrowserRouter> */}
+    </>
   )
 }
 
