@@ -13,13 +13,10 @@ body{
   overflow: overlay;
   background-color: none;
   color: white;
-  // height: 100vh;
+  
   scroll-behavior: smooth;
   background-image: url('images/night-sky.jpg');
   background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position-x: 55%;
-  // background-position-y: 10%;
   background-attachment: fixed;
 }
 
@@ -81,7 +78,7 @@ p{
   font-size: 0.2rem;
 }
 
-.tooltipText{
+.tooltipText, .tooltipText-1{
   font-family: Circular-Std-Book;
   font-size: 0.15rem;
 }

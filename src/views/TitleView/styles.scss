@@ -10,26 +10,25 @@
       word-spacing: -10px;
       span{
         background-color: none;
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
       h1{
         background-color: none;
       }
     }
     .title-line-one{
-      // margin-top: 400px;
-      height: 86px;
+      height: 0.92rem;
       span{
-        line-height: 86px;
+        line-height: 0.92rem;
       }
     }
     .title-line-two{
-      line-height: 86px;
+      line-height: 0.92rem;
       span{
-        height: 86px;
+        height: 0.92rem;
       }
       h1{
-        transform: translateX(-80%);
+        transform: translateX(-97.5%);
       }
     }
   }
@@ -61,10 +60,11 @@
   //   text-align: center;
   //   color: yellow;
   // }
-  // img{
-  //   position: absolute;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   height: 290px;
-  // }
+  .arrow{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    margin-top: 10px;
+  }
 }

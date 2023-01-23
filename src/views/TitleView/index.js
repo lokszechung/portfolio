@@ -1,6 +1,9 @@
 import './styles.scss'
 import { useState, useEffect } from 'react'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import arrow from '../../images/arrow.gif'
 
 import Django from '../../images/icons/django.svg'
@@ -16,10 +19,17 @@ import PostgreSQL from '../../images/icons/postgresql.svg'
 import Python from '../../images/icons/python.svg'
 import react from '../../images/icons/react.svg'
 import Sass from '../../images/icons/sass.svg'
+import Yarn from '../../images/icons/yarn.svg'
+import CSS from '../../images/icons/css.svg'
+import Heroku from '../../images/icons/heroku.svg'
 
 const TitleView = () => {
 
   const [scrolled, setScrolled] = useState()
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   const techStack = [
     {
@@ -59,6 +69,10 @@ const TitleView = () => {
       url: HTML
     },
     {
+      tech: 'CSS',
+      url: CSS
+    },
+    {
       tech: 'Sass',
       url: Sass
     },
@@ -74,6 +88,14 @@ const TitleView = () => {
       tech: 'NPM',
       url: NPM
     },
+    {
+      tech: 'Yarn',
+      url: Yarn
+    },
+    {
+      tech: 'Heroku',
+      url: Heroku
+    },
   ]
 
   window.addEventListener('scroll', () => {
@@ -83,7 +105,6 @@ const TitleView = () => {
   return (
     <div className="title-view-container" id="title">
       {/* <h2>THIS WEBSITE IS UNDER CONSTRUCTION</h2> */}
-      {/* <img src={arrow} alt='down arrow'/> */}
       <div className='line-container'>
         <div className='title-line-one'>
           <h1 style={{ transform: `translateX(${-scrolled/30}%)`, transitionDuration: '0.95s' }}>
@@ -93,18 +114,19 @@ const TitleView = () => {
           </h1>
         </div>
         <div className='title-line-two'>
-          <h1 style={{ transform: `translateX(${-80+scrolled/50}%)`, transitionDuration: '0.95s' }}>
+          <h1 style={{ transform: `translateX(${-97.5+scrolled/30}%)`, transitionDuration: '0.95s' }}>
             <span>LOK SZE CHUNG </span>
             <span className="outline">SOFTWARE DEVELOPER </span>
             <span>LOK SZE CHUNG </span>
             <span className="outline">SOFTWARE DEVELOPER </span>
           </h1>
         </div>
+        <img className="arrow" src={arrow} alt='down arrow'/>
       </div>
-      <h3>Tech Stack</h3>
-      <div className='icons-container'>
+      <h3 className='tech-stack aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic'>Tech Stack</h3>
+      <div className='icons-container  aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic'>
         {techStack.map(i => (
-          <div className='icon-box' key={i}>
+          <div className='icon-box' key={i.tech}>
             <img src={i.url} alt={i.tech} />
             <p>{i.tech}</p>
           </div>

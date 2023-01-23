@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0a83bdd.css",
-    "main.js": "/static/js/main.d31c20d5.js",
+    "main.css": "/static/css/main.29eeddcf.css",
+    "main.js": "/static/js/main.f5ab2085.js",
     "static/media/sprout-anywhere-1.png": "/static/media/sprout-anywhere-1.9fa4963e1a23e47b8320.png",
     "static/media/discover-london-2.png": "/static/media/discover-london-2.bbfb1d9c70320d1513a2.png",
     "static/media/minesweeper-1.png": "/static/media/minesweeper-1.8e26ba926742dda7679c.png",
     "static/media/thrift-1.png": "/static/media/thrift-1.8f6229f115a53e470bce.png",
+    "static/media/night-sky.jpg": "/static/media/night-sky.8e6bee5a8646f9497301.jpg",
+    "static/media/glowing-blue.png": "/static/media/glowing-blue.e00591947ba47b669829.png",
     "static/media/arrow.gif": "/static/media/arrow.056dfb478e400930ebca.gif",
     "static/media/Circular-Std-Medium-500.ttf": "/static/media/Circular-Std-Medium-500.3fcb6535e39024a69e30.ttf",
     "static/media/Circular-Std-Book.ttf": "/static/media/Circular-Std-Book.ce1731670f4779d9c951.ttf",
@@ -27,11 +29,11 @@
     "static/media/github.svg": "/static/media/github.54a0ba4c65a434487d8fd4479d13bfd5.svg",
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
-    "main.e0a83bdd.css.map": "/static/css/main.e0a83bdd.css.map",
-    "main.d31c20d5.js.map": "/static/js/main.d31c20d5.js.map"
+    "main.29eeddcf.css.map": "/static/css/main.29eeddcf.css.map",
+    "main.f5ab2085.js.map": "/static/js/main.f5ab2085.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0a83bdd.css",
-    "static/js/main.d31c20d5.js"
+    "static/css/main.29eeddcf.css",
+    "static/js/main.f5ab2085.js"
   ]
 }
