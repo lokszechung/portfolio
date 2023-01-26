@@ -1,7 +1,8 @@
 .title-view-container{
-  min-height: 100vh;
-  margin-top: 30%;
-  margin-bottom: 20%;
+  min-height: 100%;
+  position: relative;
+  padding-top: 30%;
+  padding-bottom: 20%;
   .line-container{
     margin-bottom: 20%;
     .title-line-one, .title-line-two{

@@ -52,7 +52,7 @@ const AboutView = () => {
   return (
     <div className='about-view-container' id="about">
       <div className='about-line-one'>
-        <h1 style={{ transform: `translateX(${-150+scrolled/80}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-150+scrolled/80}%)`, transitionDuration: '0.25s' }}>
           <span>ABOUT ME </span>
           <span className="outline">ABOUT ME </span>
           <span>ABOUT ME </span>
@@ -76,7 +76,7 @@ const AboutView = () => {
         </h1>
       </div>
       <div className='about-line-two'>
-        <h1 style={{ transform: `translateX(${-150-scrolled/100}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-100-scrolled/100}%)`, transitionDuration: '0.25s' }}>
           <span className="outline">ABOUT ME </span>
           <span>ABOUT ME </span>
           <span className="outline">ABOUT ME </span>
@@ -99,12 +99,29 @@ const AboutView = () => {
           <span>ABOUT ME </span>
         </h1>
       </div>
-      {/* <div className='about-text-container'> */}
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-offset="-510" data-aos-easing='ease-in-sine'>I am a <span>Software Developer</span> and a recent graduate of the Software Engineeing Immersive programme at General Assembly.</p>
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-offset="-745" data-aos-easing='ease-in-sine'>My aim is to find a Full Stack Developer role in a team that values <span>growth</span> and <span>integrity</span>. <br /> I am motivated by the opportunity to constantly learn and improve and create work that can have a <span>positive impact</span>.</p>
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-offset="-1205" data-aos-easing='ease-in-sine'>When I'm not writing <span>clean code</span>, you'll probably find me playing football. Or watching football. <a href="https://twitter.com/search?q=coyg" target="_blank" rel="noreferrer"><span>#COYG</span></a></p>
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-offset="-1460" data-aos-easing='ease-in-sine'>I'm also interested in trading in the stock market and forex market, and have dabbled in crypto <span className='oops'>&#x28;oops&#x29;</span>. However, I've lost more than I've made, so I really do need a full-time job.</p>
-      {/* </div> */}
+
+      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="520">
+        I am a <span>Software Developer</span> and a recent graduate of the Software Engineering Immersive programme at General Assembly.
+      </p>
+      {/* data-aos-offset="-510" */}
+
+
+      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="570">
+        My aim is to find a Full Stack Developer role in a team that values <span>growth</span> and <span>integrity</span>. <br /> I am motivated by the opportunity to constantly learn and improve and create work that can have a <span>positive impact</span>.
+      </p>
+      {/* data-aos-offset="-745"  */}
+
+
+      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="515">
+        When I'm not writing <span>clean code</span>, you'll probably find me playing football or watching football. <a href="https://twitter.com/search?q=coyg" target="_blank" rel="noreferrer"><span>#COYG</span></a>
+      </p>
+      {/* data-aos-offset="-1205" */}
+
+
+      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="550">
+        I also trade in the stock market and forex market, and have dabbled in crypto <span className='oops'>&#x28;oops&#x29;</span>. Even though I've lost more than I've made, I really enjoy the process and journey.
+      </p>
+      {/* data-aos-offset="-1460" */}
     </div>
   )
 }

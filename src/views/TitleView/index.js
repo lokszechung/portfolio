@@ -107,14 +107,14 @@ const TitleView = () => {
       {/* <h2>THIS WEBSITE IS UNDER CONSTRUCTION</h2> */}
       <div className='line-container'>
         <div className='title-line-one'>
-          <h1 style={{ transform: `translateX(${-scrolled/30}%)`, transitionDuration: '0.95s' }}>
+          <h1 style={{ transform: `translateX(${-scrolled/30}%)`, transitionDuration: '0.25s' }}>
             <span>LOK SZE CHUNG </span>
             <span className="outline">SOFTWARE DEVELOPER </span>
             <span>LOK SZE CHUNG </span>
           </h1>
         </div>
         <div className='title-line-two'>
-          <h1 style={{ transform: `translateX(${-97.5+scrolled/30}%)`, transitionDuration: '0.95s' }}>
+          <h1 style={{ transform: `translateX(${-97.5+scrolled/30}%)`, transitionDuration: '0.25s' }}>
             <span>LOK SZE CHUNG </span>
             <span className="outline">SOFTWARE DEVELOPER </span>
             <span>LOK SZE CHUNG </span>
@@ -123,10 +123,10 @@ const TitleView = () => {
         </div>
         <img className="arrow" src={arrow} alt='down arrow'/>
       </div>
-      <h3 className='tech-stack aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic'>Tech Stack</h3>
-      <div className='icons-container  aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic'>
+      <h3 className='tech-stack aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic' data-aos-offset='470'>Tech Stack</h3>
+      <div className='icons-container  aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic' data-aos-offset='470'>
         {techStack.map(i => (
-          <div className='icon-box' key={i.tech}>
+          <div key={i.tech} className='icon-box'>
             <img src={i.url} alt={i.tech} />
             <p>{i.tech}</p>
           </div>

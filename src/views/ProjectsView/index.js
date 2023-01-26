@@ -34,17 +34,15 @@ import openRepo from '../../images/repository-nobg.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import Slideshow from '../../components/Slideshow'
+
 const ProjectsView = () => {
 
   const [scrolled, setScrolled] = useState()
 
-  useEffect(() => {
-    AOS.init()
-  }, [])
-
-  window.addEventListener('scroll', () => {
-    setScrolled(window.scrollY)
-  })
+  // const carousel = useRef()
+  // const noOfImgs = 4;
+  // const [currentImgIndex, setCurrentImgIndex] = useState(1)
 
   const techStack = [
     {
@@ -118,10 +116,17 @@ const ProjectsView = () => {
   const discoverTech = ['JavaScript', 'React', 'HTML', 'Sass']
   const minesweeperTech = ['JavaScript', 'React', 'CSS']
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+  window.addEventListener('scroll', () => {
+      setScrolled(window.scrollY)
+    })
   return (
     <div className='projects-view-container' id="projects">
       <div className='projects-line-one'>
-        <h1 style={{ transform: `translateX(${-scrolled/60}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-scrolled/60}%)`, transitionDuration: '0.25s' }}>
           <span>MY PROJECTS </span>
           <span className="outline">MY PROJECTS </span>
           <span>MY PROJECTS </span>
@@ -145,7 +150,7 @@ const ProjectsView = () => {
         </h1>
       </div>
       <div className='projects-line-two'>
-        <h1 style={{ transform: `translateX(${-180+scrolled/80}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-180+scrolled/80}%)`, transitionDuration: '0.25s' }}>
           <span className="outline">MY PROJECTS </span>
           <span>MY PROJECTS </span>
           <span className="outline">MY PROJECTS </span>
@@ -172,16 +177,19 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="-2110">Thrift</h3>
+          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Thrift</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="-2080" data-aos-delay='250'>
+            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/thrift-project'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/thrift-project'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="-2200" src={thrift1} alt="thrift"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="-2690">
+        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={thrift1} alt="thrift"/>
+        {/* <div className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410">
+          <Slideshow />
+        </div> */}
+        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />
@@ -191,12 +199,12 @@ const ProjectsView = () => {
               <img src={solo} alt='solo' />
               <p>Solo project</p>
             </div>
-            <p className='tech-used'>Technology used:</p>
+            <p className='tech-used'>Technologies used:</p>
             <div className='tech-line'>
               {thriftTech.map(i => {
                 const techIndex = techStack.findIndex(t => t.tech === i)
                 return (
-                  <div className='icon-wrapper'>
+                  <div className='icon-wrapper' key={techStack[techIndex].tech}>
                     <img src={techStack[techIndex].url} alt={techStack[techIndex].tech} />
                     <span className='tooltipText'>{techStack[techIndex].tech}</span>
                   </div>
@@ -215,16 +223,16 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="-2800">Sprout Anywhere</h3>
+          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Sprout Anywhere</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="-2770" data-aos-delay='250'>
+            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
               <a target='_blank' rel='noreferrer' href='https://sprout-anywhere.herokuapp.com/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/sprout-anywhere'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="-2890" src={sprout1} alt="sprout"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="-3340">
+        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={sprout1} alt="sprout"/>
+        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />
@@ -234,12 +242,12 @@ const ProjectsView = () => {
               <img src={solo} alt='solo' />
               <p>Team of 3</p>
             </div>
-            <p className='tech-used'>Technology used:</p>
+            <p className='tech-used'>Technologies used:</p>
             <div className='tech-line'>
               {sproutTech.map(i => {
                 const techIndex = techStack.findIndex(t => t.tech === i)
                 return (
-                  <div className='icon-wrapper'>
+                  <div className='icon-wrapper' key={techStack[techIndex].tech}>
                     <img src={techStack[techIndex].url} alt={techStack[techIndex].tech} />
                     <span className='tooltipText'>{techStack[techIndex].tech}</span>
                   </div>
@@ -259,16 +267,16 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="-3495">Discover London</h3>
+          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Discover London</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="-3465" data-aos-delay='250'>
+            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
               <a target='_blank' rel='noreferrer' href='https://discover-london-events.netlify.app/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/LondonEvents'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="-3585" src={discover1} alt="discover"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="-4025">
+        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={discover1} alt="discover"/>
+        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />
@@ -278,12 +286,12 @@ const ProjectsView = () => {
               <img src={solo} alt='solo' />
               <p>Team of 2</p>
             </div>
-            <p className='tech-used'>Technology used:</p>
+            <p className='tech-used'>Technologies used:</p>
             <div className='tech-line'>
               {discoverTech.map(i => {
                 const techIndex = techStack.findIndex(t => t.tech === i)
                 return (
-                  <div className='icon-wrapper'>
+                  <div className='icon-wrapper' key={techStack[techIndex].tech}>
                     <img src={techStack[techIndex].url} alt={techStack[techIndex].tech} />
                     <span className='tooltipText'>{techStack[techIndex].tech}</span>
                   </div>
@@ -303,16 +311,16 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="-4150">Minesweeper</h3>
+          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Minesweeper</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="-4120" data-aos-delay='250'>
+            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
               <a target='_blank' rel='noreferrer' href='https://lokszechung.github.io/project-minesweeper/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/project-minesweeper'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="-4235" src={minesweeper1} alt="minesweeper"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="-4600">
+        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={minesweeper1} alt="minesweeper"/>
+        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />
@@ -322,12 +330,12 @@ const ProjectsView = () => {
               <img src={solo} alt='solo' />
               <p>Solo Project</p>
             </div>
-            <p className='tech-used'>Technology used:</p>
+            <p className='tech-used'>Technologies used:</p>
             <div className='tech-line'>
               {minesweeperTech.map(i => {
                 const techIndex = techStack.findIndex(t => t.tech === i)
                 return (
-                  <div className='icon-wrapper'>
+                  <div className='icon-wrapper' key={techStack[techIndex].tech}>
                     <img src={techStack[techIndex].url} alt={techStack[techIndex].tech} />
                     <span className='tooltipText'>{techStack[techIndex].tech}</span>
                   </div>
@@ -338,7 +346,7 @@ const ProjectsView = () => {
           <div className='project-right'>
             <div className='info'>
               <p>I built a grid-based game using JavaScript, HTML and CSS. I chose a challenging game to replicate, cementing my fundamental logical JavaScript skills.</p>
-              <p>I kept to a lot of the original, nostaligic design. Have a go at beating the game! There are three difficulty levels to choose from, or set your own custom board.</p>
+              <p>I kept to a lot of the original, nostalgic design. Have a go at beating the game! There are three difficulty levels to choose from, or set your own custom board.</p>
             </div>
           </div>
         </div>
@@ -348,4 +356,28 @@ const ProjectsView = () => {
   )  
 }
 
-export default ProjectsView    
+export default ProjectsView  
+
+// Thrift
+// data-aos-offset="-2110"
+// data-aos-offset="-2080"
+// data-aos-offset="-2200"
+// data-aos-offset="-2690"
+
+// Sprout 
+// data-aos-offset="-2800"
+// data-aos-offset="-2770"
+// data-aos-offset="-2890"
+// data-aos-offset="-3340"
+
+// Discover
+// data-aos-offset="-3495"
+// data-aos-offset="-3465"
+// data-aos-offset="-3585"
+// data-aos-offset="-4025"
+
+// Minesweeper
+// data-aos-offset="-4150"
+// data-aos-offset="-4120"
+// data-aos-offset="-4235"
+// data-aos-offset="-4600"

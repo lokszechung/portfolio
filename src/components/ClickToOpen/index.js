@@ -23,4 +23,4 @@ const ClicktToOpen = () => {
   
 }
 
-export default ClicktToOpen  
+export default ClicktToOpen

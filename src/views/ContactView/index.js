@@ -23,7 +23,7 @@ const ContactView = () => {
   return (
     <div className="contact-view-container" id="contact">
       <div className='contact-line-one'>
-        <h1 style={{ transform: `translateX(${-150+scrolled/60}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-200+scrolled/60}%)`, transitionDuration: '0.25s' }}>
           <span>CONTACT ME </span>
           <span className="outline">CONTACT ME </span>
           <span>CONTACT ME </span>
@@ -47,7 +47,7 @@ const ContactView = () => {
         </h1>
       </div>
       <div className='contact-line-two'>
-        <h1 style={{ transform: `translateX(${-100-scrolled/80}%)`, transitionDuration: '0.95s' }}>
+        <h1 style={{ transform: `translateX(${-100-scrolled/80}%)`, transitionDuration: '0.25s' }}>
           <span className="outline">CONTACT ME </span>
           <span>CONTACT ME </span>
           <span className="outline">CONTACT ME </span>
@@ -70,16 +70,16 @@ const ContactView = () => {
           <span>CONTACT ME </span>
         </h1>
       </div>
-      <p className='find aos-init aos-animate' data-aos="fade-up" data-aos-offset="-5065" data-aos-easing='ease-in-sine'>Find me on the following:</p>
-      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="-5165" data-aos-easing='ease-in-sine'>
+      <p className='find aos-init aos-animate' data-aos="fade-up" data-aos-offset="430" data-aos-easing='ease-in-sine'>Find me on the following:</p>
+      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="400" data-aos-easing='ease-in-sine'>
         <img src={GitHub} alt='Github' />
         <a href="https://github.com/lokszechung" target="_blank" rel="noreferrer">github.com/lokszechung</a>
       </div>
-      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="-5230" data-aos-easing='ease-in-sine' data-aos-delay='250'>
+      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="335" data-aos-easing='ease-in-sine' data-aos-delay='250'>
         <img src={LinkedIn} alt='LinkedIn' />
         <a href="https://www.linkedin.com/in/lokszechung/" target="_blank" rel="noreferrer">linkedin.com/in/lokszechung</a>
       </div>
-      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="-5295" data-aos-easing='ease-in-sine' data-aos-delay='500'>
+      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="270" data-aos-easing='ease-in-sine' data-aos-delay='500'>
         <img src={Email} alt='Email' />
         <p>lschung@hotmail.co.uk</p>
       </div>
@@ -92,3 +92,8 @@ const ContactView = () => {
 }
 
 export default ContactView    
+
+// data-aos-offset="-5065"
+// data-aos-offset="-5165" 
+// data-aos-offset="-5230"
+// data-aos-offset="-5295" 
