@@ -1,4 +1,5 @@
 import './styles.scss'
+import logo from '../../images/logo-no-bg.png'
 
 function handleClickAbout() {
   setTimeout(() => {
@@ -21,6 +22,7 @@ const Navbar = () => {
   return (
     <header>
         <nav className='navbar'>
+          <img src={logo} alt='LS logo' />
           <ul>
             <li className='navlink' onClick={handleClickAbout}>
               <a href="#about">About</a> 

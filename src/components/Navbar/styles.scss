@@ -18,12 +18,15 @@ header{
   position: fixed;
   height: 100px;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100vw;
+  // left: 0;
+  // right: 0;
   z-index: 1100;
 }
 
 .navbar{
+  display: flex;
+  justify-content: space-between;
   // height: 50px;
   // background-color: orange;
   // width: 200px;
@@ -42,12 +45,27 @@ header{
     padding-right: 2.5%;
     li{
       list-style-type: none; 
-      line-height: 5px; 
+      line-height: 0px; 
+      @media (max-width: 550px) {
+        line-height: 0;
+      }
       a{
         color: white;
         font-size: 0.15rem;
         // float: right;
+        @media (max-width: 550px) {
+          font-size: 0.12rem;
+        }
       }
+    }
+  }
+
+  img{
+    height: 60px;
+    padding-left: 2.5%;
+    margin-top: 20px;
+    @media (max-width: 550px) {
+      height: 50px;
     }
   }
 }

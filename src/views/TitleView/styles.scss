@@ -1,10 +1,12 @@
 .title-view-container{
   min-height: 100%;
   position: relative;
-  padding-top: 30%;
-  padding-bottom: 20%;
+  padding-top: 54.25vh;
+  padding-bottom: 36.1666666vh;
   .line-container{
-    margin-bottom: 20%;
+    // margin-bottom: 20%;
+    margin-bottom: 36.1666666vh;
+    height: 45.75vh;
     .title-line-one, .title-line-two{
       white-space: nowrap;
       overflow: hidden;
@@ -12,6 +14,7 @@
       span{
         background-color: none;
         font-size: 1.1rem;
+        // font-size: 108%;
       }
       h1{
         background-color: none;
@@ -22,6 +25,15 @@
       span{
         line-height: 0.92rem;
       }
+
+      @media (max-width: 550px) {
+        height: 22vw;
+        span{
+          line-height: 10vw;
+          font-size: 12vw;
+        }
+      }
+
     }
     .title-line-two{
       line-height: 0.92rem;
@@ -31,12 +43,26 @@
       h1{
         transform: translateX(-97.5%);
       }
+
+      @media (max-width: 550px) {
+        line-height: 8vw;
+        span{
+          height: 20vw;
+          font-size: 12vw;
+        }
+        h1{
+          transform: translateX(-97.5%);
+        }
+      }
     }
   }
 
   h3{
-    margin-top: 50px;
+    // margin-top: 50px;
     text-align: center;
+    @media (max-width: 550px) {
+      font-size: 0.3rem;
+    }
   }
   .icons-container{
     display: flex;
@@ -45,16 +71,34 @@
     max-width: 600px;
     margin: 50px auto 100px auto;
 
+    @media (max-width: 550px) {
+      margin: 40px;
+    }
+
     .icon-box{
       padding: 5px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       img{
         height: 120px;
       }
       p{
         text-align: center;
+        @media (max-width: 550px) {
+          font-size: 0.15rem;
+        }
       }
+
+      @media (max-width: 550px) {
+        padding: 2.5px;
+        padding-bottom: 20px;
+        img{
+          height: 80px;
+          width: 60px;
+        }
+      }
+
     }
   }
   // h2{
@@ -68,4 +112,11 @@
     height: 150px;
     margin-top: 10px;
   }
+
+
+
+
+  // @media (max-width: 550px) {
+  //   background-color: blue;
+  // }
 }

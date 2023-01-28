@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e83ea361.css",
-    "main.js": "/static/js/main.74a04b99.js",
+    "main.css": "/static/css/main.3b4aa7b9.css",
+    "main.js": "/static/js/main.5a23a594.js",
     "static/media/sprout-anywhere-1.png": "/static/media/sprout-anywhere-1.9fa4963e1a23e47b8320.png",
     "static/media/discover-london-2.png": "/static/media/discover-london-2.bbfb1d9c70320d1513a2.png",
     "static/media/minesweeper-1.png": "/static/media/minesweeper-1.8e26ba926742dda7679c.png",
     "static/media/thrift-1.png": "/static/media/thrift-1.8f6229f115a53e470bce.png",
+    "static/media/thrift-5.png": "/static/media/thrift-5.5b53f61f006883c69495.png",
+    "static/media/halfmoon.png": "/static/media/halfmoon.6ba30df17c98dc032419.png",
     "static/media/night-sky.jpg": "/static/media/night-sky.8e6bee5a8646f9497301.jpg",
+    "static/media/thrift-2.png": "/static/media/thrift-2.723bb8858b4fecee185a.png",
+    "static/media/thrift-3.png": "/static/media/thrift-3.bd9a81eb23ea63ac560e.png",
     "static/media/arrow.gif": "/static/media/arrow.056dfb478e400930ebca.gif",
     "static/media/Circular-Std-Medium-500.ttf": "/static/media/Circular-Std-Medium-500.3fcb6535e39024a69e30.ttf",
     "static/media/Circular-Std-Book.ttf": "/static/media/Circular-Std-Book.ce1731670f4779d9c951.ttf",
     "static/media/MonumentExtended-Regular.otf": "/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
     "static/media/MonumentExtended-Ultrabold.otf": "/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
-    "static/media/repository-nobg.png": "/static/media/repository-nobg.ccdecb1b75a99d256c67.png",
-    "static/media/explore-project-nobg.png": "/static/media/explore-project-nobg.f77a2a7daba4a7ec5099.png",
+    "static/media/repository-nobg.png": "/static/media/repository-nobg.99694dcdff1b31e8ec5b.png",
+    "static/media/explore-project-nobg.png": "/static/media/explore-project-nobg.283bb4645ec7ae0c9673.png",
     "static/media/react.svg": "/static/media/react.a1814b1c844df28ca6c7b74f9081c0b6.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.a3812c4d369efe8a9ac35fb7377dbc2e.svg",
     "static/media/sass.svg": "/static/media/sass.2d8ee9fb1975e562de946e27663d185c.svg",
@@ -32,11 +36,11 @@
     "static/media/heroku.svg": "/static/media/heroku.56d90efa92a3a4bf3d52f7b2da72587c.svg",
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
-    "main.e83ea361.css.map": "/static/css/main.e83ea361.css.map",
-    "main.74a04b99.js.map": "/static/js/main.74a04b99.js.map"
+    "main.3b4aa7b9.css.map": "/static/css/main.3b4aa7b9.css.map",
+    "main.5a23a594.js.map": "/static/js/main.5a23a594.js.map"
   },
   "entrypoints": [
-    "static/css/main.e83ea361.css",
-    "static/js/main.74a04b99.js"
+    "static/css/main.3b4aa7b9.css",
+    "static/js/main.5a23a594.js"
   ]
 }
