@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b4aa7b9.css",
-    "main.js": "/static/js/main.5a23a594.js",
+    "main.css": "/static/css/main.6a1697a7.css",
+    "main.js": "/static/js/main.3467b801.js",
     "static/media/sprout-anywhere-1.png": "/static/media/sprout-anywhere-1.9fa4963e1a23e47b8320.png",
     "static/media/discover-london-2.png": "/static/media/discover-london-2.bbfb1d9c70320d1513a2.png",
     "static/media/minesweeper-1.png": "/static/media/minesweeper-1.8e26ba926742dda7679c.png",
@@ -16,6 +16,7 @@
     "static/media/Circular-Std-Book.ttf": "/static/media/Circular-Std-Book.ce1731670f4779d9c951.ttf",
     "static/media/MonumentExtended-Regular.otf": "/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
     "static/media/MonumentExtended-Ultrabold.otf": "/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
+    "static/media/logo-no-bg.png": "/static/media/logo-no-bg.798b4069b9efebb1a980.png",
     "static/media/repository-nobg.png": "/static/media/repository-nobg.99694dcdff1b31e8ec5b.png",
     "static/media/explore-project-nobg.png": "/static/media/explore-project-nobg.283bb4645ec7ae0c9673.png",
     "static/media/react.svg": "/static/media/react.a1814b1c844df28ca6c7b74f9081c0b6.svg",
@@ -36,11 +37,11 @@
     "static/media/heroku.svg": "/static/media/heroku.56d90efa92a3a4bf3d52f7b2da72587c.svg",
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
-    "main.3b4aa7b9.css.map": "/static/css/main.3b4aa7b9.css.map",
-    "main.5a23a594.js.map": "/static/js/main.5a23a594.js.map"
+    "main.6a1697a7.css.map": "/static/css/main.6a1697a7.css.map",
+    "main.3467b801.js.map": "/static/js/main.3467b801.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4aa7b9.css",
-    "static/js/main.5a23a594.js"
+    "static/css/main.6a1697a7.css",
+    "static/js/main.3467b801.js"
   ]
 }

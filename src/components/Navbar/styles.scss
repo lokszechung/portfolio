@@ -45,9 +45,9 @@ header{
     padding-right: 2.5%;
     li{
       list-style-type: none; 
-      line-height: 0px; 
+      line-height: 5px; 
       @media (max-width: 550px) {
-        line-height: 0;
+        line-height: 5px;
       }
       a{
         color: white;
