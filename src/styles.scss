@@ -20,6 +20,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   @media (max-width: 550px) {
+    width: 100vw;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,11 +109,13 @@ a{
   display: block;
   width: 100vw;
   height: 100vh;
-  // background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   z-index: 10000;
   background-image: url('images/night-sky.jpg');
   background-size: cover;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 }
 
 .moon{
@@ -122,6 +125,10 @@ a{
   border-radius: 50%;
   box-shadow: 0px -100px 200px rgba(255, 255, 255, 0.4);
   position: relative;
+  @media (max-width: 550px) {
+    width: 100%;
+    transform: translateY(170vw);
+  }
 }
 
 .counter{
@@ -142,6 +149,9 @@ a{
     font-size: 1.5rem;
     color: rgb(255, 255, 255, 0.5);
     -webkit-text-stroke: 2.5px black;
+    @media (max-width: 550px) {
+      font-size: 1rem;
+    }
   }
   .percent{
     font-family: MonumentExtended-Regular;
@@ -150,6 +160,9 @@ a{
     // -webkit-text-stroke: 2px white;
     color: rgb(255, 255, 255, 0.5);
     -webkit-text-stroke: 2px black;
+    @media (max-width: 550px) {
+      font-size: 0.3rem;
+    }
   }
 }
 @keyframes fadeOut {
