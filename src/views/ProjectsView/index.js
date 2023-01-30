@@ -180,7 +180,7 @@ const ProjectsView = () => {
           <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Thrift</h3>
           <div className='project-clickables'>
             <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
-              <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/thrift-project'><img className='open-project' src={openProject} alt="open project"/></a>
+              <a target='_blank' rel='noreferrer' href='https://thrift-project.herokuapp.com/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/thrift-project'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>

@@ -67,6 +67,9 @@ header{
     height: 60px;
     padding-left: 2.5%;
     margin-top: 20px;
+    &:hover{
+      cursor: pointer;
+    }
     @media (max-width: 550px) {
       height: 50px;
     }

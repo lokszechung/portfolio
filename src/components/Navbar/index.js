@@ -12,17 +12,22 @@ function handleClickProject() {
     window.scrollBy(0, 350)
   }, 1500)
 }
+
 function handleClickContact() {
   setTimeout(() => {
     window.scrollBy(0, 275)
   }, 1500)
 }
 
+function handleClickHome() {
+  window.scrollTo({ left: 0, top: 0, behavior: 'smooth'})
+}
+
 const Navbar = () => {
   return (
     <header>
         <nav className='navbar'>
-          <img src={logo} alt='LS logo' />
+          <img src={logo} alt='LS logo' onClick={handleClickHome} />
           <ul>
             <li className='navlink' onClick={handleClickAbout}>
               <a href="#about">About</a> 

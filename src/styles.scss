@@ -11,12 +11,11 @@
 body{
   height: 100vh;
   // overflow-y: auto;
-  overflow: overlay;
+  overflow: hidden;
   background-color: none;
   color: white;
   
-  // scroll-behavior: smooth !important;
-  background-image: url('images/night-sky.jpg');
+  background-image: url('images/star-long-2.jpg');
   background-size: cover;
   background-attachment: fixed;
   @media (max-width: 550px) {
@@ -111,7 +110,7 @@ a{
   height: 100vh;
   position: fixed;
   z-index: 10000;
-  background-image: url('images/night-sky.jpg');
+  background-image: url('images/star-long-2.jpg');
   background-size: cover;
   @media (max-width: 550px) {
     width: 100%;

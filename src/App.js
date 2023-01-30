@@ -21,7 +21,7 @@ const App = () => {
   const [counter, setCounter] = useState(0)
 
   const body = document.body
-  const main = document.getElementById('root')
+  // const main = document.getElementById('root')
 
   window.addEventListener('load', startScroll)
 
@@ -57,6 +57,7 @@ const App = () => {
     }, 4000)
     setTimeout(() => {
       counterRef.current.style='display: none;'
+      body.style.overflow = 'overlay'
     }, 4100)
   }
 
