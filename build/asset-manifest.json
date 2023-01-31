@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b03c877.css",
-    "main.js": "/static/js/main.3467b801.js",
+    "main.css": "/static/css/main.740e631a.css",
+    "main.js": "/static/js/main.96a9738e.js",
     "static/media/sprout-anywhere-1.png": "/static/media/sprout-anywhere-1.9fa4963e1a23e47b8320.png",
+    "static/media/minesweeper-1.png": "/static/media/minesweeper-1.050e664c0460b86e2305.png",
     "static/media/discover-london-2.png": "/static/media/discover-london-2.bbfb1d9c70320d1513a2.png",
-    "static/media/minesweeper-1.png": "/static/media/minesweeper-1.8e26ba926742dda7679c.png",
     "static/media/thrift-1.png": "/static/media/thrift-1.8f6229f115a53e470bce.png",
     "static/media/thrift-5.png": "/static/media/thrift-5.5b53f61f006883c69495.png",
     "static/media/halfmoon.png": "/static/media/halfmoon.6ba30df17c98dc032419.png",
-    "static/media/night-sky.jpg": "/static/media/night-sky.8e6bee5a8646f9497301.jpg",
     "static/media/thrift-2.png": "/static/media/thrift-2.723bb8858b4fecee185a.png",
+    "static/media/star-long-2.jpg": "/static/media/star-long-2.76d88b391dbfe5adadf5.jpg",
     "static/media/thrift-3.png": "/static/media/thrift-3.bd9a81eb23ea63ac560e.png",
     "static/media/arrow.gif": "/static/media/arrow.056dfb478e400930ebca.gif",
     "static/media/Circular-Std-Medium-500.ttf": "/static/media/Circular-Std-Medium-500.3fcb6535e39024a69e30.ttf",
@@ -37,11 +37,11 @@
     "static/media/heroku.svg": "/static/media/heroku.56d90efa92a3a4bf3d52f7b2da72587c.svg",
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
-    "main.0b03c877.css.map": "/static/css/main.0b03c877.css.map",
-    "main.3467b801.js.map": "/static/js/main.3467b801.js.map"
+    "main.740e631a.css.map": "/static/css/main.740e631a.css.map",
+    "main.96a9738e.js.map": "/static/js/main.96a9738e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b03c877.css",
-    "static/js/main.3467b801.js"
+    "static/css/main.740e631a.css",
+    "static/js/main.96a9738e.js"
   ]
 }
