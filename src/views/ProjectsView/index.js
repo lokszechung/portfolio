@@ -191,25 +191,29 @@ const ProjectsView = () => {
         </div> */}
         <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
           <div className='project-left'>
-            <div className='detail-line-days'>
-              <img src={clock} alt='timeframe' />
-              <p>7 days</p>
+            <div className='detail-lines'>
+              <div className='detail-line-days'>
+                <img src={clock} alt='timeframe' />
+                <p>7 days</p>
+              </div>
+              <div className='detail-line-team'>
+                <img src={solo} alt='solo' />
+                <p>Solo project</p>
+              </div>
             </div>
-            <div className='detail-line-team'>
-              <img src={solo} alt='solo' />
-              <p>Solo project</p>
-            </div>
-            <p className='tech-used'>Technologies used:</p>
-            <div className='tech-line'>
-              {thriftTech.map(i => {
-                const techIndex = techStack.findIndex(t => t.tech === i)
-                return (
-                  <div className='icon-wrapper' key={techStack[techIndex].tech}>
-                    <img src={techStack[techIndex].url} alt={techStack[techIndex].tech} />
-                    <span className='tooltipText'>{techStack[techIndex].tech}</span>
-                  </div>
-                )
-              })}
+            <div className='tech-container'>
+              <p className='tech-used'>Technologies used:</p>
+              <div className='tech-line'>
+                {thriftTech.map(i => {
+                  const techIndex = techStack.findIndex(t => t.tech === i)
+                  return (
+                    <div className='icon-wrapper' key={techStack[techIndex].tech}>
+                      <img src={techStack[techIndex].url} alt={techStack[techIndex].tech} />
+                      <span className='tooltipText'>{techStack[techIndex].tech}</span>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
           <div className='project-right'>
