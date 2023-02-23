@@ -53,17 +53,21 @@ const App = () => {
       window.scrollTo({ left: 0, top: 0, behavior: 'smooth'})
     }, 2000)
     setTimeout(() => {
-      moonRef.current.style=`transition: 3.5s; transform: translateY(-300vh);`
-    }, 4000)
+      moonRef.current.style=`transition: 2s; transform: translateY(-700vh);`
+      // moonRef.current.style=`visibility: hidden; opacity: 0; transform: translateY(-700vh); transition: translate 10s, visibility 0s 10s, opacity 10s linear;`
+    }, 4500)
     setTimeout(() => {
-      counterRef.current.style='display: none;'
+      moonRef.current.style=`visibility: hidden;`
       body.style.overflow = 'overlay'
+    }, 4800)
+    setTimeout(() => {
+      counterRef.current.style=`transition: 2s; transform: translateY(-700vh);`
     }, 4100)
   }
 
   const loading = 
   <div className='black' ref={moonRef}>
-    <img className='moon' src={halfmoon} alt='moon'/>
+    {/* <img className='moon' src={halfmoon} alt='moon'/> */}
     <div className='counter' ref={counterRef}>
       <p className='number'>{counter}</p>
       <p className='percent'>PERCENT</p>
@@ -134,7 +138,6 @@ const App = () => {
           <AboutView />
           <ProjectsView />
           <ContactView />
-          {/* </div> */}
         </main>
       </BrowserRouter>
     </>
