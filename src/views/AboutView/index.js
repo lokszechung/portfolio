@@ -100,25 +100,25 @@ const AboutView = () => {
         </h1>
       </div>
 
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="520">
+      <p className='about-text'>
         I am a <span>Software Developer</span> and a recent graduate of the Software Engineering Immersive programme at General Assembly.
       </p>
       {/* data-aos-offset="-510" */}
 
 
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="570">
+      <p className='about-text'>
         My aim is to find a Full Stack Developer role in a team that values <span>growth</span> and <span>integrity</span>. <br /> I am motivated by the opportunity to constantly learn and improve and create work that can have a <span>positive impact</span>.
       </p>
       {/* data-aos-offset="-745"  */}
 
 
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="515">
+      <p className='about-text'>
         When I'm not writing <span>clean code</span>, you'll probably find me playing football or watching football. <a href="https://twitter.com/search?q=coyg" target="_blank" rel="noreferrer"><span>#COYG</span></a>
       </p>
       {/* data-aos-offset="-1205" */}
 
 
-      <p className='about-text aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-offset="550">
+      <p className='about-text'>
         I also trade in the stock market and forex market, and have dabbled in crypto <span className='oops'>&#x28;oops&#x29;</span>. Even though I've lost more than I've made, I really enjoy the process and journey.
       </p>
       {/* data-aos-offset="-1460" */}

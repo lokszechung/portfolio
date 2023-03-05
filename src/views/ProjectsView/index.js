@@ -116,9 +116,9 @@ const ProjectsView = () => {
   const discoverTech = ['JavaScript', 'React', 'HTML', 'Sass']
   const minesweeperTech = ['JavaScript', 'React', 'CSS']
 
-  useEffect(() => {
-    AOS.init()
-  }, [])
+  // useEffect(() => {
+  //   AOS.init()
+  // }, [])
 
   window.addEventListener('scroll', () => {
       setScrolled(window.scrollY)
@@ -177,19 +177,19 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Thrift</h3>
+          <h3>Thrift</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
+            <div className='buttons'>
               <a target='_blank' rel='noreferrer' href='https://thrift-project.herokuapp.com/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/thrift-project'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={thrift1} alt="thrift"/>
+        <img className='thumbnail' src={thrift1} alt="thrift"/>
         {/* <div className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410">
           <Slideshow />
         </div> */}
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
+        <div className='project-info'>
           <div className='project-left'>
             <div className='detail-lines'>
               <div className='detail-line-days'>
@@ -201,7 +201,7 @@ const ProjectsView = () => {
                 <p>Solo project</p>
               </div>
             </div>
-            <div className='tech-container'>
+            {/* <div className='tech-container'> */}
               <p className='tech-used'>Technologies used:</p>
               <div className='tech-line'>
                 {thriftTech.map(i => {
@@ -214,7 +214,7 @@ const ProjectsView = () => {
                   )
                 })}
               </div>
-            </div>
+            {/* </div> */}
           </div>
           <div className='project-right'>
             <div className='info'>
@@ -227,16 +227,16 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Sprout Anywhere</h3>
+          <h3>Sprout Anywhere</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
+            <div className='buttons'>
               <a target='_blank' rel='noreferrer' href='https://sprout-anywhere.herokuapp.com/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/sprout-anywhere'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={sprout1} alt="sprout"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
+        <img className='thumbnail' src={sprout1} alt="sprout"/>
+        <div className='project-info'>
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />
@@ -271,16 +271,16 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Discover London</h3>
+          <h3>Discover London</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
+            <div className='buttons'>
               <a target='_blank' rel='noreferrer' href='https://discover-london-events.netlify.app/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/LondonEvents'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={discover1} alt="discover"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
+        <img className='thumbnail' src={discover1} alt="discover"/>
+        <div className='project-info'>
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />
@@ -315,16 +315,16 @@ const ProjectsView = () => {
 
       <div className='project-box'>
         <div className="project-title">
-          <h3 className="aos-init aos-animate" data-aos="fade-right" data-aos-offset="500">Minesweeper</h3>
+          <h3>Minesweeper</h3>
           <div className='project-clickables'>
-            <div className='buttons aos-init aos-animate' data-aos="fade-left" data-aos-offset="530" data-aos-delay='250'>
+            <div className='buttons'>
               <a target='_blank' rel='noreferrer' href='https://lokszechung.github.io/project-minesweeper/'><img className='open-project' src={openProject} alt="open project"/></a>
               <a target='_blank' rel='noreferrer' href='https://github.com/lokszechung/project-minesweeper'><img className='open-repo' src={openRepo} alt="open repo"/></a>
             </div>
           </div>
         </div>
-        <img className='thumbnail aos-init aos-animate' data-aos="fade-up" data-aos-offset="410" src={minesweeper1} alt="minesweeper"/>
-        <div className='project-info aos-init aos-animate' data-aos="fade-down"  data-aos-offset="160">
+        <img className='thumbnail' src={minesweeper1} alt="minesweeper"/>
+        <div className='project-info'>
           <div className='project-left'>
             <div className='detail-line-days'>
               <img src={clock} alt='timeframe' />

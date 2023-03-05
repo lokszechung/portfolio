@@ -29,13 +29,13 @@ const Navbar = () => {
         <nav className='navbar'>
           <img src={logo} alt='LS logo' onClick={handleClickHome} />
           <ul>
-            <li className='navlink' onClick={handleClickAbout}>
+            <li className='navlink'>
               <a href="#about">About</a> 
             </li>
-            <li className='navlink' onClick={handleClickProject}>
+            <li className='navlink'>
               <a href="#projects" >Projects</a> 
             </li>
-            <li className='navlink' onClick={handleClickContact}>
+            <li className='navlink'>
               <a href="#contact" >Contact</a>
             </li>
           </ul>

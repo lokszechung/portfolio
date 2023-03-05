@@ -70,18 +70,19 @@ const ContactView = () => {
           <span>CONTACT ME </span>
         </h1>
       </div>
-      <p className='find aos-init aos-animate' data-aos="fade-up" data-aos-offset="430" data-aos-easing='ease-in-sine'>Find me on the following:</p>
-      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="400" data-aos-easing='ease-in-sine'>
+      <p className='find'>Find me on the following:</p>
+      <div className='contact-line'>
         <img src={GitHub} alt='Github' />
         <a href="https://github.com/lokszechung" target="_blank" rel="noreferrer">github.com/lokszechung</a>
       </div>
-      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="335" data-aos-easing='ease-in-sine' data-aos-delay='250'>
+      <div className='contact-line'>
         <img src={LinkedIn} alt='LinkedIn' />
         <a href="https://www.linkedin.com/in/lokszechung/" target="_blank" rel="noreferrer">linkedin.com/in/lokszechung</a>
       </div>
-      <div className='contact-line aos-init aos-animate' data-aos="fade-up" data-aos-offset="270" data-aos-easing='ease-in-sine' data-aos-delay='500'>
+      <div className='contact-line'>
         <img src={Email} alt='Email' />
-        <p>lschung@hotmail.co.uk</p>
+        {/* <p>lschung@hotmail.co.uk</p> */}
+        <a href="mailto:lschung@hotmail.co.uk">lschung@hotmail.co.uk</a>
       </div>
       <footer>
         <p>Copyright © 2023 Lok Sze Chung. All Rights Reserved.</p>

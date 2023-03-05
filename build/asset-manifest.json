@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.69b24c28.css",
-    "main.js": "/static/js/main.f9645d3e.js",
+    "main.css": "/static/css/main.77ea7fe3.css",
+    "main.js": "/static/js/main.057970d4.js",
     "static/media/sprout-anywhere-1.png": "/static/media/sprout-anywhere-1.9fa4963e1a23e47b8320.png",
     "static/media/minesweeper-1.png": "/static/media/minesweeper-1.050e664c0460b86e2305.png",
     "static/media/discover-london-2.png": "/static/media/discover-london-2.bbfb1d9c70320d1513a2.png",
@@ -36,11 +36,11 @@
     "static/media/heroku.svg": "/static/media/heroku.56d90efa92a3a4bf3d52f7b2da72587c.svg",
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
-    "main.69b24c28.css.map": "/static/css/main.69b24c28.css.map",
-    "main.f9645d3e.js.map": "/static/js/main.f9645d3e.js.map"
+    "main.77ea7fe3.css.map": "/static/css/main.77ea7fe3.css.map",
+    "main.057970d4.js.map": "/static/js/main.057970d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.69b24c28.css",
-    "static/js/main.f9645d3e.js"
+    "static/css/main.77ea7fe3.css",
+    "static/js/main.057970d4.js"
   ]
 }

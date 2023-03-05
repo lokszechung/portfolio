@@ -123,15 +123,16 @@ const TitleView = () => {
         </div>
         <img className="arrow" src={arrow} alt='down arrow'/>
       </div>
-      {/* <h3 className='tech-stack'>Tech Stack</h3> */}
-      <h3 className='tech-stack aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic' data-aos-offset='470'>Tech Stack</h3>
-      <div className='icons-container  aos-init aos-animate' data-aos="fade-up" data-aos-easing='ease-in-cubic' data-aos-offset='470'>
-        {techStack.map(i => (
-          <div key={i.tech} className='icon-box'>
-            <img src={i.url} alt={i.tech} />
-            <p>{i.tech}</p>
-          </div>
-        ))}        
+      <div className='tech-container'>
+        <h3 className='tech-stack'>Tech Stack</h3>
+        <div className='icons-container'>
+          {techStack.map(i => (
+            <div key={i.tech} className='icon-box'>
+              <img src={i.url} alt={i.tech} />
+              <p>{i.tech}</p>
+            </div>
+          ))}        
+        </div>
       </div>
     </div>
   )
