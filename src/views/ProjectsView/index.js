@@ -220,6 +220,7 @@ const ProjectsView = () => {
             <div className='info'>
               <p>Inspired while browsing Facebook Marketplace one night, I created a full stack application for a marketplace website using React for the frontend and Python and Django REST Framework to build the backend and serve a REST API.</p>
               <p>This app enables users to list their own items to sell, or simply browse the app to see what others are selling.</p>
+              <i><p>Note: App hosted on free Heroku server. Please allow 10-15 seconds to load.</p></i>  
             </div>
           </div>
         </div>
@@ -264,6 +265,7 @@ const ProjectsView = () => {
               <p>Using React for the frontend and MongoDB, Express and Node to build the backend and serve a REST API, we created a full stack MERN application for a houseplants blogging and e-commerce website.</p>
               <p>This was a group project where my contributions were building the landing page, plant catalogue pages, and adding authentication into CRUD elements.</p>
               <p>Users of the app can buy or read blogs about plants. Create an account to start posting your own!</p>
+              <i><p>Note: App hosted on free Heroku server. Please allow 10-15 seconds to load.</p></i> 
             </div>
           </div>
         </div>
