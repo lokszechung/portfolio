@@ -14,65 +14,63 @@ import halfmoon from './images/halfmoon.png'
 
 const App = () => {
 
+  // const moonRef = useRef(null)
+  // const counterRef = useRef(null)
+  // const [counter, setCounter] = useState(0)
 
+  // const body = document.body
+  // // const main = document.getElementById('root')
 
-  const moonRef = useRef(null)
-  const counterRef = useRef(null)
-  const [counter, setCounter] = useState(0)
+  // window.addEventListener('load', startScroll)
 
-  const body = document.body
-  // const main = document.getElementById('root')
+  // let count 
 
-  window.addEventListener('load', startScroll)
+  // function startScroll() {
+    // window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth'})
 
-  let count 
+    // let counters = 0
 
-  function startScroll() {
-    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth'})
+    // count = setInterval(() => {
+    //   counters = counterFunction()
+    // }, 25)
 
-    let counters = 0
+    // function counterFunction() {
+    //   if (counters < 100) {
+    //     counters = counters + 1
+    //     setCounter(counters)
+    //     return counters
+    //   }
+    //   else{
+    //     clearInterval(count)
+    //     setCounter(100)
+    //     return 100
+    //   }
+    // }
 
-    count = setInterval(() => {
-      counters = counterFunction()
-    }, 25)
+  //   setTimeout(() => {
+  //     window.scrollTo({ left: 0, top: 0, behavior: 'smooth'})
+  //   }, 2000)
+  //   setTimeout(() => {
+  //     moonRef.current.style=`transition: 2s; transform: translateY(-700vh);`
+  //     // moonRef.current.style=`visibility: hidden; opacity: 0; transform: translateY(-700vh); transition: translate 10s, visibility 0s 10s, opacity 10s linear;`
+  //   }, 4500)
+  //   setTimeout(() => {
+  //     moonRef.current.style=`visibility: hidden;`
+  //     body.style.overflow = 'overlay'
+  //   }, 4800)
+  //   setTimeout(() => {
+  //     counterRef.current.style=`transition: 2s; transform: translateY(-700vh);`
+  //   }, 4100)
+  // }
 
-    function counterFunction() {
-      if (counters < 100) {
-        counters = counters + 1
-        setCounter(counters)
-        return counters
-      }
-      else{
-        clearInterval(count)
-        setCounter(100)
-        return 100
-      }
-    }
-
-    setTimeout(() => {
-      window.scrollTo({ left: 0, top: 0, behavior: 'smooth'})
-    }, 2000)
-    setTimeout(() => {
-      moonRef.current.style=`transition: 2s; transform: translateY(-700vh);`
-      // moonRef.current.style=`visibility: hidden; opacity: 0; transform: translateY(-700vh); transition: translate 10s, visibility 0s 10s, opacity 10s linear;`
-    }, 4500)
-    setTimeout(() => {
-      moonRef.current.style=`visibility: hidden;`
-      body.style.overflow = 'overlay'
-    }, 4800)
-    setTimeout(() => {
-      counterRef.current.style=`transition: 2s; transform: translateY(-700vh);`
-    }, 4100)
-  }
-
-  const loading = 
-  <div className='black' ref={moonRef}>
-    {/* <img className='moon' src={halfmoon} alt='moon'/> */}
-    <div className='counter' ref={counterRef}>
-      <p className='number'>{counter}</p>
-      <p className='percent'>PERCENT</p>
-    </div>
-  </div>
+  // const loading = 
+  // <div className='black' ref={moonRef}>
+  //   {/* <img className='moon' src={halfmoon} alt='moon'/> */}
+  //   <div className='counter' ref={counterRef}>
+  //     <p className='number'>{counter}</p>
+  //     <p className='percent'>PERCENT</p>
+  //   </div>
+  // </div>
 
   // We define variables we will need later. 
   // 2 variables to store the scroll position and 2 variables to store the 
@@ -133,7 +131,7 @@ const App = () => {
       <Navbar />
       <BrowserRouter>
         <main>
-          {loading}
+          {/* {loading} */}
           <TitleView />
           <AboutView />
           <ProjectsView />

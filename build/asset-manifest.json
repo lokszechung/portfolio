@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8a1d4b82.css",
-    "main.js": "/static/js/main.c01af88d.js",
+    "main.js": "/static/js/main.e053c9e2.js",
     "static/media/sprout-anywhere-1.png": "/static/media/sprout-anywhere-1.9fa4963e1a23e47b8320.png",
     "static/media/minesweeper-1.png": "/static/media/minesweeper-1.050e664c0460b86e2305.png",
     "static/media/discover-london-2.png": "/static/media/discover-london-2.bbfb1d9c70320d1513a2.png",
@@ -37,10 +37,10 @@
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.22cf934551a1f6d2d9b4f6b747f8b937.svg",
     "main.8a1d4b82.css.map": "/static/css/main.8a1d4b82.css.map",
-    "main.c01af88d.js.map": "/static/js/main.c01af88d.js.map"
+    "main.e053c9e2.js.map": "/static/js/main.e053c9e2.js.map"
   },
   "entrypoints": [
     "static/css/main.8a1d4b82.css",
-    "static/js/main.c01af88d.js"
+    "static/js/main.e053c9e2.js"
   ]
 }
