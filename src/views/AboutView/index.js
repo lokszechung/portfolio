@@ -101,13 +101,13 @@ const AboutView = () => {
       </div>
 
       <p className='about-text'>
-        I am a <span>Software Developer</span> and a recent graduate of the Software Engineering Immersive programme at General Assembly.
+        I am a <span>Software Developer</span> and a recent software engineering intern at <a href="https://cord.com/" target="_blank" rel="noreferrer"><span>Cord</span></a>.
       </p>
       {/* data-aos-offset="-510" */}
 
 
       <p className='about-text'>
-        My aim is to find a Full Stack Developer role in a team that values <span>growth</span> and <span>integrity</span>. <br /> I am motivated by the opportunity to constantly learn and improve and create work that can have a <span>positive impact</span>.
+        I am seeking a Full Stack Engineer role in <span>driven</span> and <span>high-calibre</span> team. <br /> I am motivated by the opportunity to constantly learn and improve and create work that can have a <span>positive impact</span>.
       </p>
       {/* data-aos-offset="-745"  */}
 
